@@ -4,8 +4,11 @@ import Experience from "./Experience";
 import Projects from "./Projects";
 const Home = () => {
     const navigate = useNavigate()
+    
     const handleClick =()=>{
         navigate("/about")
+
+
     }
   return (
     <>
@@ -15,7 +18,7 @@ const Home = () => {
           className="  font-bold pb-2"
           style={{ "font-size": "220px" }}
         >
-         Mar<button className="bounce text-gray-700" onClick={handleClick}>i</button>ya<span className="text-gray-700">.</span>
+         Mar<button className="bounce italic" onClick={handleClick}>i</button>ya
         </div>
 
         <div className=" flex flex-row justify-between ">

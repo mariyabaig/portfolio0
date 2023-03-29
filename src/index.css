@@ -9,13 +9,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f7f6f1;
+  /* background-color: #f7f6f1;
 opacity: 1;
 background-image:  linear-gradient(#fcecef 2.9000000000000004px, transparent 2.9000000000000004px), linear-gradient(to right, #fcecef 2.9000000000000004px, #f7f6f1 2.9000000000000004px);
-background-size: 58px 58px;
+background-size: 58px 58px; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1.mariya{
+  
+  /* font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px; */
+  letter-spacing: 3px;
+  cursor: pointer
+}
+h1.mariya span.span{
+  transition: .5s linear
+}
+h1.mariya:hover span.span:nth-child(1){
+  margin-right: 5px
+}
+h1.mariya:hover span.span:nth-child(1):after{
+  content: "about";
+   display: inline-block;
+  font-size: 50px;
+  font-weight: normal
+}
+h1.mariya:hover span.span:nth-child(2){
+  margin-left: 30px
+}
+h1.mariya:hover span.span{
+  color: #000
+;
+text-shadow: 0 0 4px #000, 0 0 8px #000, 0 0 12px #000;
+}
+/*made with ❤, by qpi65*/

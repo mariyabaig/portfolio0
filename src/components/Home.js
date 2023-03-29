@@ -18,7 +18,8 @@ const Home = () => {
           className="  font-bold pb-2"
           style={{ "font-size": "220px" }}
         >
-         Mar<button className="bounce italic" onClick={handleClick}>i</button>ya
+         {/* Mar<button className="bounce italic" onClick={handleClick}>i</button>ya */}
+         <h1 className="mariya"><span className="span"></span>Mar<button className="bounce italic" onClick={handleClick}>i</button>ya<span className="span"></span></h1>
         </div>
 
         <div className=" flex flex-row justify-between ">
@@ -48,8 +49,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Projects/>
-  <Experience/>
+      
     </>
   );
 };

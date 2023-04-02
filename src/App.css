@@ -51,6 +51,6 @@
   }
   50% {
     transform: translateY(-5px);
-    color: rgb(103, 15, 85);
+    color: #7d776c
   }
 }

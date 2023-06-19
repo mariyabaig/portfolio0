@@ -1,6 +1,5 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import SideMenu from './SideMenu'
 
 
 const Experience = () => {

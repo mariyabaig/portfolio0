@@ -98,12 +98,17 @@
 // export default Perfect;
 import React from "react";
 import {FiSearch} from 'react-icons/fi';
+import { Animated } from "react-animated-css";
 
 const Perfect = () => {
   return (
     <>
-      <div className="my-32 mx-16">
-        
+      <div className="my-32 mx-16 " >
+      <Animated
+            animationIn="zoomIn"
+            animationOut="fadeOut"
+            isVisible={true}
+          >
         <h1 className="my-6 text-4xl text-center py-8 font-bold" style={{ "color":"#FFF4D6" }}>Everything you need for a perfect website</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-justify">
           <span>
@@ -139,7 +144,9 @@ const Perfect = () => {
             or making improvements I’m here to help.</p>
           </span>
         </div>
+        </Animated>
       </div>
+      
     </>
   );
 };

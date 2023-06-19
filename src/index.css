@@ -61,6 +61,7 @@ a */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
 
 body {
   margin: 0;
@@ -69,8 +70,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0d1019;
-  color:#7d776c ;
+  background-color:  #f9c5d1;
+  color:#2d325b ;
 }
 
 code {
@@ -96,6 +97,7 @@ h1.mariya:hover span.span:nth-child(1):after{
   display: inline-block;
   font-size: 50px;
   font-weight: normal;
+  color: white;
 }
 
 h1.mariya:hover span.span:nth-child(2){
@@ -116,7 +118,7 @@ span.about{
 } */
 
 h1.mariya:hover span.span {
-  color: #7D776C;
+  color: #ffffff;
   text-shadow: 0 0 3px #7D776C, 0 0 3px #7D776C, 0 0 3px #7D776C;
 }
 

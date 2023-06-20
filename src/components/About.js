@@ -29,10 +29,22 @@ const About = () => {
           className="  font-bold py-20"
           style={{ "font-size": "220px" }}
         >
-         {/* Mar<button className="bounce italic" onClick={handleClick}>i</button>ya */}
-         {/* <span className="span" ></span><span className="about">about</span>Mar<span className="italic">i</span>ya<span className="span"></span>
-        </div> */}
-        <h1 className="mariya" style={{ "color":"#FFF4D6" }} ><span className="about">about</span>Mar<span className="bounce italic">i</span>ya<span className="span"></span></h1>
+      
+        {/* <h1 className="mariya" style={{ "color":"#FFF4D6" }} ><span className="about">about</span> */}
+        <div
+          className=" pb-2 font-freehand"s
+        >
+          <h1>
+            <span className="span"></span>
+           <span className="text-6xl">about</span> Mar
+            <span className="italic" >
+              i
+            </span>
+            ya
+            <span className="span"></span>
+          </h1>
+        </div>
+      
         </div>
         <div className="mx-4 md:mx-0">
           <p className="text-lg md:text-xl  leading-8 md:leading-10 mt-8 md:mt-12">

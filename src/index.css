@@ -328,3 +328,10 @@ span.about {
     background: linear-gradient(135deg, #ad00ff, #ffc600, #ff6b6b);
   }
   
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    box-shadow: 5px 5px gray 
+  }

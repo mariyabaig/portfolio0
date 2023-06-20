@@ -11,11 +11,11 @@ const Projects = () => {
   const images = [l, la, h, t, t4, t2];
   const textData = [
     {
-      title: 'Project Title 1',
+      title: 'Expense Tracker',
       description: 'Project description goes here 1.',
     },
     {
-      title: 'Project Title 2',
+      title: 'Result Management',
       description: 'Project description goes here 2.',
     },
     {

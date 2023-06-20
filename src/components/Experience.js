@@ -6,8 +6,8 @@ const Experience = () => {
   const navigate = useNavigate()
   return (
     <>
-    <div className='h-screen'>
-  
+    <div className='h-screen bg-seagreen w-full'>
+  Hello
     </div>
    
     

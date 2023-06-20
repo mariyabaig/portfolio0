@@ -20,7 +20,8 @@ module.exports = {
         freehand: ["Freehand", "cursive"],
       },
       colors :{
-        peach : "#ffb3ac"
+        peach : "#ffb3ac",
+        seagreen : "#66a291",
       }
     },
   },

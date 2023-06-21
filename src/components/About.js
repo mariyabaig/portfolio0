@@ -26,12 +26,26 @@ const About = () => {
     <> 
       <div className="flex flex-col mx-4 md:mx-16 mb-16 ">
       <div
+          className=" pb-2 font-freehand"
+          style={{ fontSize: "clamp(6rem, 22vw, 22rem)" }}
+        >
+          <h1 className="mariya">
+            <span className="span"></span>
+            Mar
+            <button className="bounce italic">
+              i
+            </button>
+            ya
+            <span className="span"></span>
+          </h1>
+        </div>
+      {/* <div
           className="  font-bold py-20"
           style={{ "font-size": "220px" }}
-        >
+        > */}
       
         {/* <h1 className="mariya" style={{ "color":"#FFF4D6" }} ><span className="about">about</span> */}
-        <div
+        {/* <div
           className=" pb-2 font-freehand"s
         >
           <h1>
@@ -43,9 +57,10 @@ const About = () => {
             ya
             <span className="span"></span>
           </h1>
-        </div>
-      
-        </div>
+        </div> */}
+{/*       
+        </div> */}
+
         <div className="mx-4 md:mx-0">
           <p className="text-lg md:text-xl  leading-8 md:leading-10 mt-8 md:mt-12">
             Hi, I'm Mariya Baig. Creating stunning and intuitive web experiences is a true passion of mine. From ideation to execution, I thrive on the process of bringing designs to life and crafting user-friendly interfaces that delight users. With a keen eye for detail and a commitment to excellence, I relish the opportunity to push the boundaries of what's possible and exceed expectations with every project. Whether it's experimenting with cutting-edge design techniques or collaborating with cross-functional teams, I'm always eager to explore new possibilities and take web design to the next level.

@@ -30,7 +30,7 @@ const Home = () => {
             <button className="bounce italic" onClick={handleClick}>
               i
             </button>
-            ya
+            ya.
             <span className="span"></span>
           </h1>
         </div>
@@ -50,7 +50,6 @@ const Home = () => {
                 mariyabaig0@gmail.com
               </a>
               <span className="text-3xl font-bold">
-                <h1>Front-End Developer</h1>
                 <h1>Full-Stack Developer</h1>
               </span>
             </span>

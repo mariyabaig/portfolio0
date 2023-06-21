@@ -22,7 +22,8 @@ module.exports = {
       colors :{
         peach : "#ffb3ac",
         seagreen : "#66a291",
-        darkblue : "#2d325b"
+        darkblue : "#2d325b",
+        teal : "#264e70"
       }
     },
   },

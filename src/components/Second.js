@@ -1,20 +1,39 @@
 import React from 'react';
 import Draggable from 'react-draggable';
+import git from "../assets/git.png";
 
 const Second = () => {
   return (
-    <div className='h-screen bg-peach'>
-        <h1 className='text-darkblue'>Things I have written about</h1>
-      <Draggable>
-        <div className='bg-white h-60 w-1/3 rounded-md m-8 box'>2</div>
-      </Draggable>
-      <Draggable> 
-        <div className='bg-white h-60 w-1/3 rounded-md m-8 box'>2</div>
-      </Draggable>
-      <Draggable>
-        <div className='bg-white h-60 w-1/3 rounded-md m-8 box'>2</div>
-      </Draggable>
-    </div>
+    <>
+      <h1 className="text-darkblue">Things I have written about</h1>
+      <div className="h-screen bg-peach grid grid-cols-2 gap-0">
+        <Draggable>
+          <div className="bg-white h-60 w-3/4 rounded-md m-8 box flex flex-col group relative">
+            <h1 className="font-bold relative z-10">
+            
+            
+              How to use Git like a Pro: A GenZ's guide
+            
+            </h1>
+            <span className="px-3">
+              Mastering Git is essential for Gen Z coders looking to level up their skills. In this guide, we'll simplify
+              Git's complexities and empower you to collaborate like a pro. From setting up your repository to branching,
+              merging, and resolving conflicts, get ready to shine in the coding world. Embrace Git's power and conquer your
+              coding dreams. Let's slay Git together!
+            </span>
+          </div>
+        </Draggable>
+        <Draggable>
+          <div className="bg-white h-60 w-3/4 rounded-md m-8 box">2</div>
+        </Draggable>
+        <Draggable>
+          <div className="bg-white h-60 w-3/4 rounded-md m-8 box">2</div>
+        </Draggable>
+        <Draggable>
+          <div className="bg-white h-60 w-3/4 rounded-md m-8 box">2</div>
+        </Draggable>
+      </div>
+    </>
   );
 };
 

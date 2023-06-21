@@ -1,6 +1,5 @@
 import React from 'react';
 import Draggable from 'react-draggable';
-import git from "../assets/git.png";
 
 const Second = () => {
   return (

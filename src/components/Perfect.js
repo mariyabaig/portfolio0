@@ -103,7 +103,7 @@ import { Animated } from "react-animated-css";
 const Perfect = () => {
   return (
     <>
-      <div className="py-32 px-16 text-darkblue bg-seagreen " >
+      <div className="py-32 px-16 text-white bg-seagreen  " >
       <Animated
             animationIn="zoomIn"
             animationOut="fadeOut"

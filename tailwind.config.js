@@ -23,7 +23,8 @@ module.exports = {
         peach : "#ffb3ac",
         seagreen : "#66a291",
         darkblue : "#2d325b",
-        teal : "#264e70"
+        teal : "#264e70",
+        pink : "#f9c5d1"
       }
     },
   },

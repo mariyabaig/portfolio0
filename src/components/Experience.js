@@ -19,16 +19,16 @@ const Experience = () => {
 
   return (
     <>
-    <div className='grid sm:grid-cols-1 grid-cols-2'>
-    <div className="container mx-auto bg-teal text-white w-1/2 p-10 m-10 rounded">
+    <div className='grid grid-cols-2'>
+    <div className="container mx-auto  w-3/4 p-10 m-10 rounded">
 
       <h2 className="text-lg font-bold mt-6 mb-2">PROFESSIONAL EXPERIENCE</h2>
 
       <div className="mb-6">
         <div className="flex flex-col items-start cursor-pointer" onClick={() => toggleDetails('showDetails1')}>
-          <p className="font-bold text-xl text-pink">Associate Software Developer</p>
-          <p className="text-pink">Nagarro, Gurgaon, India</p>
-          <span className="bg-pink text-darkblue p-1 m-1 rounded font-bold">Aug 2022 – Present</span>
+          <p className="font-bold text-xl ">Associate Software Developer</p>
+          <p className="">Nagarro, Gurgaon, India</p>
+          <span className=" text-darkblue p-1 m-1 rounded font-bold">Aug 2022 – Present</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className={`h-5 w-5 ml-1 ${dropdownState.showDetails1 ? 'transform rotate-180' : ''}`}
@@ -54,9 +54,9 @@ const Experience = () => {
 
       <div className="mb-6">
         <div className="flex flex-col items-start cursor-pointer" onClick={() => toggleDetails('showDetails2')}>
-          <p className="font-bold text-xl text-pink">Software Developer Trainee</p>
-          <p className="text-pink">Nagarro, Gurgaon, India</p>
-          <span className="bg-pink text-darkblue p-1 m-1 rounded font-bold">Feb 2022 – Aug 2022</span>
+          <p className="font-bold text-xl ">Software Developer Trainee</p>
+          <p className="">Nagarro, Gurgaon, India</p>
+          <span className=" text-darkblue p-1 m-1 rounded font-bold">Feb 2022 – Aug 2022</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className={`h-5 w-5 ml-1 ${dropdownState.showDetails2 ? 'transform rotate-180' : ''}`}
@@ -84,14 +84,14 @@ const Experience = () => {
       </div>
     </div>
 
-    <div className="container mx-auto bg-teal text-white w-1/2 p-10 m-10 rounded">
+    <div className="container mx-auto  w-3/4 p-10 m-10 rounded">
   <h2 className="text-lg font-bold mt-6 mb-2">EDUCATIONAL EXPERIENCE</h2>
 
   <div className="mb-6">
     <div className="flex flex-col items-start cursor-pointer" onClick={() => toggleDetails('showDetails3')}>
-      <p className="font-bold text-xl text-pink">B.Tech (EC)</p>
-      <p className="text-pink">Acropolis Institute of Technology and Research – Indore, MP</p>
-      <span className="bg-pink text-darkblue p-1 m-1 rounded font-bold">2022</span>
+      <p className="font-bold text-xl ">B.Tech (EC)</p>
+      <p className="">Acropolis Institute of Technology and Research – Indore, MP</p>
+      <span className=" text-darkblue p-1 m-1 rounded font-bold">2022</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className={`h-5 w-5 ml-1 ${dropdownState.showDetails3 ? 'transform rotate-180' : ''}`}
@@ -114,9 +114,9 @@ const Experience = () => {
 
   <div className="mb-6">
     <div className="flex flex-col items-start cursor-pointer" onClick={() => toggleDetails('showDetails4')}>
-      <p className="font-bold text-xl text-pink">12th (CBSE)</p>
-      <p className="text-pink">San Thome Academy – Dewas, MP</p>
-      <span className="bg-pink text-darkblue p-1 m-1 rounded font-bold">2018</span>
+      <p className="font-bold text-xl ">12th (CBSE)</p>
+      <p className="">San Thome Academy – Dewas, MP</p>
+      <span className=" text-darkblue p-1 m-1 rounded font-bold">2018</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className={`h-5 w-5 ml-1 ${dropdownState.showDetails4 ? 'transform rotate-180' : ''}`}
@@ -139,9 +139,9 @@ const Experience = () => {
 
   <div className="mb-6">
     <div className="flex flex-col items-start cursor-pointer" onClick={() => toggleDetails('showDetails5')}>
-      <p className="font-bold text-xl text-pink">10th (CBSE)</p>
-      <p className="text-pink">San Thome Academy – Dewas, MP</p>
-      <span className="bg-pink text-darkblue p-1 m-1 rounded font-bold">2018</span>
+      <p className="font-bold text-xl ">10th (CBSE)</p>
+      <p className="">San Thome Academy – Dewas, MP</p>
+      <span className=" text-darkblue p-1 m-1 rounded font-bold">2018</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className={`h-5 w-5 ml-1 ${dropdownState.showDetails5 ? 'transform rotate-180' : ''}`}

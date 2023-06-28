@@ -123,7 +123,7 @@ h1.mariya:hover span.span {
 }
 
 span.about {
-  color: #7D776C;
+  color: white;
   text-shadow: 0 0 3px rgba(125, 119, 108, 0.7), 0 0 3px rgba(125, 119, 108, 0.7), 0 0 3px rgba(125, 119, 108, 0.7);
   display: inline-block;
   font-size: 50px;

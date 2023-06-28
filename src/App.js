@@ -8,6 +8,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Navbar from './components/Navbar';
 import Perfect from './components/Perfect';
+import Skills from './components/Skills';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/services" element={<Perfect />} />
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/contact" element={<Contact />}></Route>
+          <Route exact path="/skills" element={<Skills />}></Route>
         </Routes>
        
       </BrowserRouter>

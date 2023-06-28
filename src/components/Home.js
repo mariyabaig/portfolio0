@@ -25,13 +25,13 @@ const Home = () => {
           style={{ fontSize: "clamp(6rem, 22vw, 22rem)" }}
         >
           <h1 className="mariya">
-            <span className="span"></span>
+            <span className="about">about</span>
             Mar
-            <button className="bounce italic" onClick={handleClick}>
+            <button className="italic" onClick={handleClick}>
               i
             </button>
             ya.
-            <span className="span"></span>
+           
           </h1>
         </div>
         

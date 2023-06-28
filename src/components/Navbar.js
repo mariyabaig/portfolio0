@@ -44,9 +44,9 @@ const Navbar = () => {
         <li className="py-4">
           <NavLink to="/services" activeClassName="active" style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>Services</NavLink>
         </li>
-        <li className="py-4">
+        {/* <li className="py-4">
           <NavLink to="/contact" activeClassName="active" style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>Contact</NavLink>
-        </li>
+        </li> */}
       </ul>
     </div>
   )

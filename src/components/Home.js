@@ -27,7 +27,7 @@ const Home = () => {
           <h1 className="mariya">
             <span className="about">about</span>
             Mar
-            <button className="italic" onClick={handleClick}>
+            <button className="italic text-red" onClick={handleClick}>
               i
             </button>
             ya.
@@ -44,7 +44,7 @@ const Home = () => {
           >
             <span className="flex flex-col justify-between px-2 py-2">
               <a
-                className="font-semibold px-2 py-2 underline text-md"
+                className="font-semibold px-2 py-2 text-red text-md"
                 href="mailto:mariyabaig0@gmail.com"
               >
                 mariyabaig0@gmail.com
@@ -61,7 +61,7 @@ const Home = () => {
               isVisible={true}
             >
               <span>
-                <h1 className="px-2 py-2">
+                <h1 className="px-2 py-2text-red">
                   18+ months development experience. <br />
                   Based in Indore, India. <br />
                   Get in touch for availability.

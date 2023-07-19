@@ -40,7 +40,7 @@ const Second = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {notes.map((note, index) => (
             <Draggable key={index}>
-              <div className="notepad bg-white rounded-lg p-4">
+              <div className="notepad bg-white rounded-lg p-4 shadow-md">
                 <div className="top"></div>
                 <div className="paper" contentEditable="true"></div>
                 <div className="mt-4">

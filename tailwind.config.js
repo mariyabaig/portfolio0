@@ -24,7 +24,8 @@ module.exports = {
         seagreen : "#66a291",
         darkblue : "#2d325b",
         teal : "#264e70",
-        pink : "#f9c5d1"
+        pink : "#f9c5d1",
+        red : "#d8314a"
       }
     },
   },

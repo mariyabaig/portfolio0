@@ -70,8 +70,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:  #f9c5d1;
-  color:#2d325b ;
+  /* background-color:  #f9c5d1;
+  color:#2d325b ; */
+  background-color: white;
+  color: black;
+  
 }
 
 code {
@@ -335,3 +338,4 @@ span.about {
     border: 2px solid black;
     box-shadow: 5px 5px gray 
   }
+  

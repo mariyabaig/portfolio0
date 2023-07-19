@@ -20,7 +20,11 @@ const Experience = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="bg-white rounded-lg p-8 shadow-md">
         <h2 className="text-lg font-bold mt-6 mb-2">PROFESSIONAL EXPERIENCE</h2>
-        <div className="mb-6">
+        <div
+          className={`mb-6 transition-max-height duration-300 ${
+            dropdownState.showDetails1 ? 'max-h-64' : 'max-h-16'
+          }`}
+        >
           <div
             className="flex flex-col items-start cursor-pointer"
             onClick={() => toggleDetails('showDetails1')}
@@ -28,18 +32,6 @@ const Experience = () => {
             <p className="font-bold text-xl">Associate Software Developer</p>
             <p className="">Nagarro, Gurgaon, India</p>
             <span className="text-blue-600 p-1 m-1 rounded font-bold">Aug 2022 – Present</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className={`h-5 w-5 ml-1 ${dropdownState.showDetails1 ? 'transform rotate-180' : ''}`}
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M6.293 7.293a1 1 0 0 1 1.414 0L10 9.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
           </div>
           {dropdownState.showDetails1 && (
             <div className="ml-6 mt-2">
@@ -59,7 +51,11 @@ const Experience = () => {
           )}
         </div>
 
-        <div className="mb-6">
+        <div
+          className={`mb-6 transition-max-height duration-300 ${
+            dropdownState.showDetails2 ? 'max-h-64' : 'max-h-16'
+          }`}
+        >
           <div
             className="flex flex-col items-start cursor-pointer"
             onClick={() => toggleDetails('showDetails2')}
@@ -67,18 +63,6 @@ const Experience = () => {
             <p className="font-bold text-xl">Software Developer Trainee</p>
             <p className="">Nagarro, Gurgaon, India</p>
             <span className="text-blue-600 p-1 m-1 rounded font-bold">Feb 2022 – Aug 2022</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className={`h-5 w-5 ml-1 ${dropdownState.showDetails2 ? 'transform rotate-180' : ''}`}
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M6.293 7.293a1 1 0 0 1 1.414 0L10 9.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
           </div>
           {dropdownState.showDetails2 && (
             <div className="ml-6 mt-2">
@@ -92,11 +76,17 @@ const Experience = () => {
             </div>
           )}
         </div>
+
+        {/* Add other professional experiences in a similar format */}
       </div>
 
       <div className="bg-white rounded-lg p-8 shadow-md">
         <h2 className="text-lg font-bold mt-6 mb-2">EDUCATIONAL EXPERIENCE</h2>
-        <div className="mb-6">
+        <div
+          className={`mb-6 transition-max-height duration-300 ${
+            dropdownState.showDetails3 ? 'max-h-64' : 'max-h-16'
+          }`}
+        >
           <div
             className="flex flex-col items-start cursor-pointer"
             onClick={() => toggleDetails('showDetails3')}
@@ -104,18 +94,6 @@ const Experience = () => {
             <p className="font-bold text-xl">B.Tech (EC)</p>
             <p className="">Acropolis Institute of Technology and Research – Indore, MP</p>
             <span className="text-blue-600 p-1 m-1 rounded font-bold">2022</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className={`h-5 w-5 ml-1 ${dropdownState.showDetails3 ? 'transform rotate-180' : ''}`}
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M6.293 7.293a1 1 0 0 1 1.414 0L10 9.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
           </div>
           {dropdownState.showDetails3 && (
             <div className="ml-6 mt-2">
@@ -124,7 +102,11 @@ const Experience = () => {
           )}
         </div>
 
-        <div className="mb-6">
+        <div
+          className={`mb-6 transition-max-height duration-300 ${
+            dropdownState.showDetails4 ? 'max-h-64' : 'max-h-16'
+          }`}
+        >
           <div
             className="flex flex-col items-start cursor-pointer"
             onClick={() => toggleDetails('showDetails4')}
@@ -132,18 +114,6 @@ const Experience = () => {
             <p className="font-bold text-xl">12th (CBSE)</p>
             <p className="">San Thome Academy – Dewas, MP</p>
             <span className="text-blue-600 p-1 m-1 rounded font-bold">2018</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className={`h-5 w-5 ml-1 ${dropdownState.showDetails4 ? 'transform rotate-180' : ''}`}
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M6.293 7.293a1 1 0 0 1 1.414 0L10 9.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
           </div>
           {dropdownState.showDetails4 && (
             <div className="ml-6 mt-2">
@@ -152,7 +122,11 @@ const Experience = () => {
           )}
         </div>
 
-        <div className="mb-6">
+        <div
+          className={`mb-6 transition-max-height duration-300 ${
+            dropdownState.showDetails5 ? 'max-h-64' : 'max-h-16'
+          }`}
+        >
           <div
             className="flex flex-col items-start cursor-pointer"
             onClick={() => toggleDetails('showDetails5')}
@@ -160,18 +134,6 @@ const Experience = () => {
             <p className="font-bold text-xl">10th (CBSE)</p>
             <p className="">San Thome Academy – Dewas, MP</p>
             <span className="text-blue-600 p-1 m-1 rounded font-bold">2018</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className={`h-5 w-5 ml-1 ${dropdownState.showDetails5 ? 'transform rotate-180' : ''}`}
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M6.293 7.293a1 1 0 0 1 1.414 0L10 9.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
           </div>
           {dropdownState.showDetails5 && (
             <div className="ml-6 mt-2">
@@ -179,6 +141,8 @@ const Experience = () => {
             </div>
           )}
         </div>
+
+        {/* Add other educational experiences in a similar format */}
       </div>
     </div>
   );

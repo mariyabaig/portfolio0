@@ -9,57 +9,37 @@ const Skills = () => {
   const versionControl = ['Git', 'GitHub', 'GitLab', 'Bitbucket'];
   const projectManagement = ['Jira'];
 
-  const renderSkills = (skills) => {
+  const renderSkillsTable = (category, skills) => {
     return (
-      <ul className="list-disc ml-4">
-        {skills.map((skill) => (
-          <li key={skill}>{skill}</li>
-        ))}
-      </ul>
+      <React.Fragment key={category}>
+        <h3 className="text-lg font-bold mb-2">{category}</h3>
+        <table className="table-fixed w-full mx-auto mb-4">
+          <tbody>
+            {skills.map((skill) => (
+              <tr key={skill}>
+                <td className="border px-4 py-2">{skill}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </React.Fragment>
     );
   };
+  
 
   return (
-    <div className="skills-container">
-      <h2 className="text-2xl font-bold mb-2">Skills</h2>
+    <div className="bg-white p-6 rounded-lg shadow-md w-96">
+      <h2 className="text-2xl font-bold mb-4">Skills</h2>
 
-      <div className="skills-category">
-        <h3 className="text-lg font-bold mb-1">Frontend</h3>
-        {renderSkills(frontendSkills)}
-      </div>
-
-      <div className="skills-category">
-        <h3 className="text-lg font-bold mb-1">Styling</h3>
-        {renderSkills(stylingSkills)}
-      </div>
-
-      <div className="skills-category">
-        <h3 className="text-lg font-bold mb-1">Backend</h3>
-        {renderSkills(backendSkills)}
-      </div>
-
-      <div className="skills-category">
-        <h3 className="text-lg font-bold mb-1">DevOps</h3>
-        {renderSkills(devOpsSkills)}
-      </div>
-
-      <div className="skills-category">
-        <h3 className="text-lg font-bold mb-1">Tools</h3>
-        {renderSkills(tools)}
-      </div>
-
-      <div className="skills-category">
-        <h3 className="text-lg font-bold mb-1">Version Control</h3>
-        {renderSkills(versionControl)}
-      </div>
-
-      <div className="skills-category">
-        <h3 className="text-lg font-bold mb-1">Project Management</h3>
-        {renderSkills(projectManagement)}
-      </div>
+      {renderSkillsTable('Frontend', frontendSkills)}
+      {renderSkillsTable('Styling', stylingSkills)}
+      {renderSkillsTable('Backend', backendSkills)}
+      {renderSkillsTable('DevOps', devOpsSkills)}
+      {renderSkillsTable('Tools', tools)}
+      {renderSkillsTable('Version Control', versionControl)}
+      {renderSkillsTable('Project Management', projectManagement)}
     </div>
   );
 };
 
 export default Skills;
- 

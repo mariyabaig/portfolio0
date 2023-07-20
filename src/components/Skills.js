@@ -14,7 +14,6 @@ const stylingSkills = [
   { name: 'Tailwind CSS', imageSrc: 'tailwind.jpg' },
   { name: 'Bootstrap', imageSrc: 'bootstrap.jpg' },
   { name: 'Material UI', imageSrc: 'mui.png' },
-
 ];
 
 const backendSkills = [
@@ -49,68 +48,99 @@ const projectManagement = [{ name: 'Jira', imageSrc: 'jira.png' }];
 
 const SkillWithImage = ({ name, imageSrc }) => {
   return (
-    <div className="flex flex-col items-center justify-center mx-4">
-      <img src={imageSrc} alt={name} className="h-16 w-16 mb-2" />
-      <span className="text-sm">{name}</span>
+    <div className="flex items-center">
+      <img src={imageSrc} alt={name} className="h-8 w-8 mr-2" />
+      <span className="text-xs">{name}</span>
     </div>
   );
 };
 
 const Skills = () => {
-  return (
-    <div className="bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4">Skills</h2>
 
-      <h3 className="text-lg font-bold mb-2">Frontend</h3>
-      <div className="flex flex-wrap">
-        {frontendSkills.map((skill) => (
-          <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
-        ))}
+    return (
+      <div className="bg-white p-6 rounded-lg shadow-md max-w-screen-lg mx-auto">
+        <h2 className="text-2xl font-bold mb-4 text-center">Skills</h2>
+  
+        <div className="grid grid-cols-2 gap-6">
+          <div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="text-lg font-bold mb-2">Frontend</h3>
+              <div className="grid grid-cols-2 gap-2">
+                {frontendSkills.map((skill) => (
+                  <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
+                ))}
+              </div>
+            </div>
+          </div>
+  
+          <div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="text-lg font-bold mb-2">Styling</h3>
+              <div className="grid grid-cols-2 gap-2">
+                {stylingSkills.map((skill) => (
+                  <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
+                ))}
+              </div>
+            </div>
+          </div>
+  
+          <div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="text-lg font-bold mb-2">Backend</h3>
+              <div className="grid grid-cols-2 gap-2">
+                {backendSkills.map((skill) => (
+                  <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
+                ))}
+              </div>
+            </div>
+          </div>
+  
+          <div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="text-lg font-bold mb-2">DevOps</h3>
+              <div className="grid grid-cols-2 gap-2">
+                {devOpsSkills.map((skill) => (
+                  <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
+                ))}
+              </div>
+            </div>
+          </div>
+  
+          <div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="text-lg font-bold mb-2">Tools</h3>
+              <div className="grid grid-cols-2 gap-2">
+                {tools.map((skill) => (
+                  <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
+                ))}
+              </div>
+            </div>
+          </div>
+  
+          <div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="text-lg font-bold mb-2">Version Control</h3>
+              <div className="grid grid-cols-2 gap-2">
+                {versionControl.map((skill) => (
+                  <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
+                ))}
+              </div>
+            </div>
+          </div>
+  
+          <div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="text-lg font-bold mb-2">Project Management</h3>
+              <div className="grid grid-cols-2 gap-2">
+                {projectManagement.map((skill) => (
+                  <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <h3 className="text-lg font-bold mb-2">Styling</h3>
-      <div className="flex flex-wrap">
-        {stylingSkills.map((skill) => (
-          <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
-        ))}
-      </div>
-
-      <h3 className="text-lg font-bold mb-2">Backend</h3>
-      <div className="flex flex-wrap">
-        {backendSkills.map((skill) => (
-          <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
-        ))}
-      </div>
-
-      <h3 className="text-lg font-bold mb-2">DevOps</h3>
-      <div className="flex flex-wrap">
-        {devOpsSkills.map((skill) => (
-          <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
-        ))}
-      </div>
-
-      <h3 className="text-lg font-bold mb-2">Tools</h3>
-      <div className="flex flex-wrap">
-        {tools.map((skill) => (
-          <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
-        ))}
-      </div>
-
-      <h3 className="text-lg font-bold mb-2">Version Control</h3>
-      <div className="flex flex-wrap">
-        {versionControl.map((skill) => (
-          <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
-        ))}
-      </div>
-
-      <h3 className="text-lg font-bold mb-2">Project Management</h3>
-      <div className="flex flex-wrap">
-        {projectManagement.map((skill) => (
-          <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default Skills;
+    );
+  };
+  
+  export default Skills;

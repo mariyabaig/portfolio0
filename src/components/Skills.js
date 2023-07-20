@@ -1,43 +1,114 @@
 import React from 'react';
 
-const Skills = () => {
-  const frontendSkills = ['JavaScript', 'React.js', 'Next.js', 'Redux', 'HTML5', 'CSS3', 'EJS'];
-  const stylingSkills = ['Tailwind CSS', 'Bootstrap', 'Material UI', 'SCSS'];
-  const backendSkills = ['Node.js', 'Express.js', 'MongoDB', 'DynamoDB', 'MySQL', 'Firebase'];
-  const devOpsSkills = ['AWS EC2 Instance and S3 Bucket', 'Jenkins'];
-  const tools = ['Visual Studio Code', 'Postman', 'Eclipse', 'ThunderClient'];
-  const versionControl = ['Git', 'GitHub', 'GitLab', 'Bitbucket'];
-  const projectManagement = ['Jira'];
+const frontendSkills = [
+  { name: 'JavaScript', imageSrc: 'js.jpg' },
+  { name: 'React.js', imageSrc: 'react.png' },
+  { name: 'Next.js', imageSrc: 'next.jpg' },
+  { name: 'Redux', imageSrc: 'redux.png' },
+  { name: 'HTML5', imageSrc: 'HTML.png' },
+  { name: 'CSS3', imageSrc: 'css.jpg' },
+  { name: 'EJS', imageSrc: 'ejs.png' },
+];
 
-  const renderSkillsTable = (category, skills) => {
-    return (
-      <React.Fragment key={category}>
-        <h3 className="text-lg font-bold mb-2">{category}</h3>
-        <table className="table-fixed w-full mx-auto mb-4">
-          <tbody>
-            {skills.map((skill) => (
-              <tr key={skill}>
-                <td className="border px-4 py-2">{skill}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </React.Fragment>
-    );
-  };
-  
+const stylingSkills = [
+  { name: 'Tailwind CSS', imageSrc: 'tailwind.jpg' },
+  { name: 'Bootstrap', imageSrc: 'bootstrap.jpg' },
+  { name: 'Material UI', imageSrc: 'mui.png' },
 
+];
+
+const backendSkills = [
+  { name: 'Node.js', imageSrc: 'node.png' },
+  { name: 'Express.js', imageSrc: 'expressjs.png' },
+  { name: 'MongoDB', imageSrc: 'mongodb.png' },
+  { name: 'DynamoDB', imageSrc: 'dynamodb.png' },
+  { name: 'MySQL', imageSrc: 'mysql.png' },
+  { name: 'Firebase', imageSrc: 'firebase.png' },
+];
+
+const devOpsSkills = [
+  { name: 'AWS EC2 Instance and S3 Bucket', imageSrc: 'aws.jpg' },
+  { name: 'Jenkins', imageSrc: 'jenkins.png' },
+];
+
+const tools = [
+  { name: 'Visual Studio Code', imageSrc: 'vsc.png' },
+  { name: 'Postman', imageSrc: 'postman.jpg' },
+  { name: 'Eclipse', imageSrc: 'eclipse.png' },
+  { name: 'ThunderClient', imageSrc: 'thunderclient.png' },
+];
+
+const versionControl = [
+  { name: 'Git', imageSrc: 'git.png' },
+  { name: 'GitHub', imageSrc: 'github.png' },
+  { name: 'GitLab', imageSrc: 'gitlab.png' },
+  { name: 'Bitbucket', imageSrc: 'bitbucket.png' },
+];
+
+const projectManagement = [{ name: 'Jira', imageSrc: 'jira.png' }];
+
+const SkillWithImage = ({ name, imageSrc }) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md w-96">
+    <div className="flex flex-col items-center justify-center mx-4">
+      <img src={imageSrc} alt={name} className="h-16 w-16 mb-2" />
+      <span className="text-sm">{name}</span>
+    </div>
+  );
+};
+
+const Skills = () => {
+  return (
+    <div className="bg-white p-6 rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-4">Skills</h2>
 
-      {renderSkillsTable('Frontend', frontendSkills)}
-      {renderSkillsTable('Styling', stylingSkills)}
-      {renderSkillsTable('Backend', backendSkills)}
-      {renderSkillsTable('DevOps', devOpsSkills)}
-      {renderSkillsTable('Tools', tools)}
-      {renderSkillsTable('Version Control', versionControl)}
-      {renderSkillsTable('Project Management', projectManagement)}
+      <h3 className="text-lg font-bold mb-2">Frontend</h3>
+      <div className="flex flex-wrap">
+        {frontendSkills.map((skill) => (
+          <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
+        ))}
+      </div>
+
+      <h3 className="text-lg font-bold mb-2">Styling</h3>
+      <div className="flex flex-wrap">
+        {stylingSkills.map((skill) => (
+          <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
+        ))}
+      </div>
+
+      <h3 className="text-lg font-bold mb-2">Backend</h3>
+      <div className="flex flex-wrap">
+        {backendSkills.map((skill) => (
+          <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
+        ))}
+      </div>
+
+      <h3 className="text-lg font-bold mb-2">DevOps</h3>
+      <div className="flex flex-wrap">
+        {devOpsSkills.map((skill) => (
+          <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
+        ))}
+      </div>
+
+      <h3 className="text-lg font-bold mb-2">Tools</h3>
+      <div className="flex flex-wrap">
+        {tools.map((skill) => (
+          <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
+        ))}
+      </div>
+
+      <h3 className="text-lg font-bold mb-2">Version Control</h3>
+      <div className="flex flex-wrap">
+        {versionControl.map((skill) => (
+          <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
+        ))}
+      </div>
+
+      <h3 className="text-lg font-bold mb-2">Project Management</h3>
+      <div className="flex flex-wrap">
+        {projectManagement.map((skill) => (
+          <SkillWithImage key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
+        ))}
+      </div>
     </div>
   );
 };

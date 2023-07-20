@@ -1,6 +1,6 @@
 import React from "react";
 import Draggable from "react-draggable";
-
+import transition from "../transition";
 const Second = () => {
   const notes = [
     {
@@ -72,4 +72,4 @@ const Second = () => {
   );
 };
 
-export default Second;
+export default transition(Second);

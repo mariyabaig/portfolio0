@@ -17,7 +17,9 @@ const Experience = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <>
+    <h1 className='text-3xl text-center mt-12'>EXPERIENCE</h1>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
       <div className="bg-white rounded-lg p-8 shadow-md">
         <h2 className="text-lg font-bold mt-6 mb-2">PROFESSIONAL EXPERIENCE</h2>
         <div
@@ -145,6 +147,7 @@ const Experience = () => {
         {/* Add other educational experiences in a similar format */}
       </div>
     </div>
+    </>
   );
 };
 

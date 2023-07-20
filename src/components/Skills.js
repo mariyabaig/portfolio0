@@ -1,5 +1,5 @@
 import React from 'react';
-
+import transition from "../transition";
 const frontendSkills = [
   { name: 'JavaScript', imageSrc: 'js.jpg' },
   { name: 'React.js', imageSrc: 'react.png' },
@@ -142,4 +142,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default transition(Skills);

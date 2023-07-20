@@ -33,19 +33,19 @@ const Navbar = () => {
     <div className='flex flex-row'>
       <ul className="fixed left-0 bottom-0 flex  p-3 transform -translate-y-1/2 rotate-180 flex-col-reverse items-center">
         <li className="py-4">
-          <NavLink to="/about" activeClassName="active" style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>About</NavLink>
+          <NavLink to="/about"  style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>About</NavLink>
         </li>
         <li className="py-4">
-          <NavLink to="/experience" activeClassName="active" style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>Experience</NavLink>
+          <NavLink to="/experience"  style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>Experience</NavLink>
         </li>
         <li className="py-4">
-          <NavLink to="/skills" activeClassName="active" style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>Skills</NavLink>
+          <NavLink to="/skills"  style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>Skills</NavLink>
         </li>
         <li className="py-4">
-          <NavLink to="/services" activeClassName="active" style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>Services</NavLink>
+          <NavLink to="/services"  style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>Services</NavLink>
         </li>
         {/* <li className="py-4">
-          <NavLink to="/contact" activeClassName="active" style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>Contact</NavLink>
+          <NavLink to="/contact"  style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>Contact</NavLink>
         </li> */}
       </ul>
     </div>

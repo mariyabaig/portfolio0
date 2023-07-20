@@ -9,6 +9,7 @@ import { FiLinkedin, FiGithub } from "react-icons/fi";
 import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
 import { CiLinkedin } from "react-icons/ci";
 import Second from "./Second";
+import transition from "../transition";
 
 const SplashScreen = ({ onAnimationComplete }) => {
   const [isAnimating, setIsAnimating] = useState(true);
@@ -32,7 +33,7 @@ const SplashScreen = ({ onAnimationComplete }) => {
       }}
     >
       {/* Add your splash screen content here */}
-      <h1 className="text-4xl font-bold">Welcome to My Portfolio</h1>
+      <h1 className="text-4xl font-bold">mariya baig</h1>
     </div>
   );
 };
@@ -56,7 +57,6 @@ const Home = () => {
         <>
           <div className="h-screen flex flex-col justify-center px-6 sm:px-16">
             <div
-              className="pb-2 font-freehand"
               style={{ fontSize: "clamp(6rem, 22vw, 22rem)" }}
             >
               <h1 className="mariya">
@@ -137,4 +137,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default transition(Home);

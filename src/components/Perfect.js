@@ -1,7 +1,7 @@
 import React from "react";
 import { FiSearch } from "react-icons/fi";
 import { Animated } from "react-animated-css";
-
+import transition from "../transition";
 const Card = ({ title, description }) => {
   return (
     <div className="bg-white p-6 rounded-md shadow-md">
@@ -45,11 +45,11 @@ const Perfect = () => {
 
   return (
     <>
-      <div className="py-32 px-16">
+      <div className="py-12 px-16">
         <Animated animationIn="zoomIn" animationOut="fadeOut" isVisible={true}>
-          <h1 className="my-6 text-4xl text-center py-8 font-bold">
+        <h2 className="text-2xl font-bold mb-4 text-center">
             Everything you need for a perfect website
-          </h1>
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-justify">
             {data.map((item, index) => (
               <Card key={index} title={item.title} description={item.description} />
@@ -61,4 +61,4 @@ const Perfect = () => {
   );
 };
 
-export default Perfect;
+export default transition(Perfect);

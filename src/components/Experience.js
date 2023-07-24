@@ -18,7 +18,9 @@ const Experience = () => {
 
   return (
     <>
-    <h1 className='text-3xl mt-12'>EXPERIENCE</h1>
+     <h2 className=" py-12 text-2xl font-bold mb-4 text-center">
+          Experience
+        </h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="bg-white rounded-lg p-8 shadow-md">
         <h2 className="text-lg font-bold mt-6 mb-2">PROFESSIONAL EXPERIENCE</h2>

@@ -57,7 +57,7 @@ const SkillWithImage = ({ name, imageSrc }) => {
 
 const Skills = () => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md max-w-screen-lg mx-auto">
+    <div className="py-12 bg-white p-6 rounded-lg shadow-md max-w-screen-lg mx-auto">
       <h2 className="text-2xl font-bold mb-4 text-center">Skills</h2>
 
       <div className="grid grid-cols-2 gap-6">

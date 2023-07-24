@@ -60,7 +60,7 @@ const Home = () => {
               style={{ fontSize: "clamp(6rem, 22vw, 22rem)" }}
             >
               <h1 className="mariya">
-                <span className="about">about</span>
+                {/* <span className="about">about</span> */}
                 Mar
                 <button className="italic text-red" onClick={handleClick}>
                   i

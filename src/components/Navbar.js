@@ -33,7 +33,10 @@ const Navbar = () => {
     <div className='flex flex-row'>
       <ul className="fixed left-0 bottom-0 flex  p-3 transform -translate-y-1/2 rotate-180 flex-col-reverse items-center">
         <li className="py-4">
-          <NavLink to="/about"  style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>About</NavLink>
+          <NavLink to="/about"   style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>About</NavLink>
+        </li>
+        <li className="py-4">
+          <NavLink to="/blog"  style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>Blogs</NavLink>
         </li>
         <li className="py-4">
           <NavLink to="/experience"  style={{textOrientation: "sideways", writingMode: "vertical-lr"}}>Experience</NavLink>

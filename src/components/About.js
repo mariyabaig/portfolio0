@@ -4,6 +4,7 @@ import Experience from "./Experience";
 import i1 from "../assets/i1.jpeg";
 import i2 from "../assets/i2.jpeg";
 import i3 from "../assets/i3.jpeg";
+import transition from "../transition";
 
 const About = () => {
   const navigate = useNavigate();
@@ -81,7 +82,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center">
+      {/* <div className="flex flex-col justify-center items-center">
         {isExpanded ? (
           <div
             className={`transition-opacity duration-500 ease-in-out ${
@@ -95,9 +96,9 @@ const About = () => {
             Experience
           </button>
         )}
-      </div>
+      </div> */}
     </>
   );
 };
 
-export default About;
+export default transition(About);

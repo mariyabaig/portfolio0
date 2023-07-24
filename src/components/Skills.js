@@ -6,12 +6,13 @@ const frontendSkills = [
   { name: 'Next.js', imageSrc: 'next.jpg' },
   { name: 'Redux', imageSrc: 'redux.png' },
   { name: 'HTML5', imageSrc: 'HTML.png' },
-  { name: 'CSS3', imageSrc: 'css.jpg' },
+  
   { name: 'EJS', imageSrc: 'ejs.png' },
 ];
 
 const stylingSkills = [
   { name: 'Tailwind CSS', imageSrc: 'tailwind.jpg' },
+  { name: 'CSS3', imageSrc: 'css.jpg' },
   { name: 'Bootstrap', imageSrc: 'bootstrap.jpg' },
   { name: 'Material UI', imageSrc: 'mui.png' },
 ];

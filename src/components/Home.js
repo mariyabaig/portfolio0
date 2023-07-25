@@ -119,10 +119,10 @@ const Home = () => {
                   >
                     <FiGithub size={20} /> GitHub
                   </a>
-                  <span className="flex flex-row items-center">
+                  {/* <span className="flex flex-row items-center">
                     <HiOutlineDevicePhoneMobile size={20} />
                     +91 6266929290
-                  </span>
+                  </span> */}
                 </span>
               </div>
             </div>

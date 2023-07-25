@@ -50,9 +50,9 @@ const Second = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <h1 className="text-xl font-bold">{note.title}</h1>
+                    <h1 className="text-xl font-bold font-roboto">{note.title}</h1>
                   </a>
-                  <p className="mt-2">{note.content}</p>
+                  <p className="mt-2 font-inco">{note.content}</p>
                   <p className="mt-2">
                     <a
                       href={note.link}

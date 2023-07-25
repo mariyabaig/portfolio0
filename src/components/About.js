@@ -91,11 +91,13 @@ const About = () => {
             science. 
           </p>
           <a href="https://mariyabaig.com" target="_blank" rel="noopener noreferrer" className="block">
-  <div className="card bg-white shadow-lg rounded-lg p-6 max-w-md mx-auto my-4">
-    <h3 className="text-3xl font-semibold text-center mb-4">Technical Blog</h3>
-    <span className="block text-center text-lg">Read more about what I write</span>
+  <div className="card bg-gray-100 shadow-lg rounded-lg p-6 max-w-md mx-auto my-4 font-oleo">
+    <h3 className="text-3xl font-semibold text-center mb-4 text-red">Explore My Technical Blog</h3>
+    <p className="text-center text-lg mb-4 font-inco">Dive into a world of technology, coding, and innovation.</p>
+    <span className="block text-center text-lg font-semibold font-inco">Read My Articles</span>
   </div>
 </a>
+
 
          
         </div>

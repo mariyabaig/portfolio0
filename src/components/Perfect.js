@@ -2,6 +2,7 @@ import React from "react";
 import { FiSearch } from "react-icons/fi";
 import { Animated } from "react-animated-css";
 import transition from "../transition";
+import Aboutcard from "./Aboutcard";
 const Card = ({ title, description }) => {
   return (
     <div className="bg-white p-6 rounded-md shadow-md">
@@ -42,7 +43,33 @@ const Perfect = () => {
       description: "Your website is always growing. Whether you’re adding new features or making improvements, I’m here to help.",
     },
   ];
-
+  const aboutCards = [
+    {
+      imageSrc: 'https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true',
+      title: 'Skills',
+      description: 'Expertise in a wide range of technologies and tools, including HTML, CSS, JavaScript, React.js, Redux, Node.js, Express.js, SQL and NoSQL databases, and Git',
+      linkTo: '/skills',
+    },
+    {
+      imageSrc: 'https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true',
+      title: 'About',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.',
+      linkTo: '/about',
+    },
+    {
+      imageSrc: 'https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true',
+      title: 'Blog',
+      description: 'Come join me on this exciting journey where we learn & explore web development together. I’ll share insights, experiences, and industry knowledge in a way that’s easy to understand.',
+      linkTo: 'https://mariyabaig.com',
+    },
+    {
+      imageSrc:                  "https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true",
+      title: 'Experience',
+      description: 'Come join me on this exciting journey where we learn & explore web development together. I’ll share insights, experiences, and industry knowledge in a way that’s easy to understand.',
+      linkTo: '/experience',
+    },
+   
+  ];
   return (
     <>
       <div className="py-12 px-16">
@@ -56,7 +83,9 @@ const Perfect = () => {
             ))}
           </div>
         </Animated>
+        <Aboutcard cards={aboutCards}/>
       </div>
+     
     </>
   );
 };

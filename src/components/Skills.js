@@ -1,5 +1,7 @@
 import React from 'react';
 import transition from "../transition";
+import Aboutcard from './Aboutcard';
+
 const frontendSkills = [
   { name: 'JavaScript', imageSrc: 'js.jpg' },
   { name: 'React.js', imageSrc: 'react.png' },
@@ -56,6 +58,33 @@ const SkillWithImage = ({ name, imageSrc }) => {
   );
 };
 
+const aboutCards = [
+  {
+    imageSrc: 'https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true',
+    title: 'About',
+    description: 'Expertise in a wide range of technologies and tools, including HTML, CSS, JavaScript, React.js, Redux, Node.js, Express.js, SQL and NoSQL databases, and Git',
+    linkTo: '/about',
+  },
+  {
+    imageSrc: 'https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true',
+    title: 'Services',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.',
+    linkTo: '/services',
+  },
+  {
+    imageSrc: 'https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true',
+    title: 'Blog',
+    description: 'Come join me on this exciting journey where we learn & explore web development together. I’ll share insights, experiences, and industry knowledge in a way that’s easy to understand.',
+    linkTo: 'https://mariyabaig.com',
+  },
+  {
+    imageSrc:                  "https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true",
+    title: 'Experience',
+    description: 'Come join me on this exciting journey where we learn & explore web development together. I’ll share insights, experiences, and industry knowledge in a way that’s easy to understand.',
+    linkTo: '/experience',
+  },
+ 
+];
 const Skills = () => {
   return (
     <div className="py-12 bg-white p-6 rounded-lg shadow-md max-w-screen-lg mx-auto">
@@ -139,6 +168,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
+      <Aboutcard cards={aboutCards}/>
     </div>
   );
 };

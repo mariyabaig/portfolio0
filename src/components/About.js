@@ -4,8 +4,10 @@ import Experience from "./Experience";
 import i1 from "../assets/i1.jpeg";
 import i2 from "../assets/i2.jpeg";
 import i3 from "../assets/i3.jpeg";
+import paw from "../assets//paw.jpg";
 import transition from "../transition";
 import Skills from "./Skills";
+import Card from "./Card";
 
 const About = () => {
   const navigate = useNavigate();
@@ -64,7 +66,7 @@ const About = () => {
           <img className="about-image h-72" src={i2} alt=""></img>
         </div>
 
-        <div className="px-32 md:mx-0 font-inco">
+        <div className="px-32 md:mx-0 font-spartan">
           <p className="text-lg md:text-xl leading-8 md:leading-10 mt-8 md:mt-12 ">
             Creating stunning and intuitive web experiences
             is a true passion of mine. From ideation to execution, I thrive on
@@ -90,13 +92,14 @@ const About = () => {
             wide range of topics, from technology and philosophy to history and
             science. 
           </p>
-          <a href="https://mariyabaig.com" target="_blank" rel="noopener noreferrer" className="block">
-  <div className="card bg-gray-100 shadow-lg rounded-lg p-6 max-w-md mx-auto my-4 font-oleo">
-    <h3 className="text-3xl font-semibold text-center mb-4 text-red">Explore My Technical Blog</h3>
-    <p className="text-center text-lg mb-4 font-inco">Dive into a world of technology, coding, and innovation.</p>
-    <span className="block text-center text-lg font-semibold font-inco">Read My Articles</span>
+          <Card/>
+          {/* <a href="https://mariyabaig.com" target="_blank" rel="noopener noreferrer" className="block">
+  <div className="card bg-gray-100 shadow-lg rounded-lg p-6 max-w-md mx-auto my-4">
+    <h3 className="text-3xl font-semibold text-center mb-4  ">Explore My <span className="font-borel text-red">Technical Blog</span></h3>
+    <p className="text-center text-lg mb-4">Dive into a world of technology, coding, and innovation.</p>
+    <span className="block text-center text-lg font-semibold">Read My Articles</span>
   </div>
-</a>
+</a> */}
 
 
          

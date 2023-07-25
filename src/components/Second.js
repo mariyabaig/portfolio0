@@ -34,7 +34,7 @@ const Second = () => {
   return (
     <div className="bg-gray-200 min-h-screen py-12 flex flex-col">
        <h2 className="text-2xl font-bold mb-4 text-center">
-          Things I Have Written About
+          Things I've <span className="font-borel text-red">written</span> about
         </h2>
       <div className="container mx-auto px-4">
    
@@ -50,9 +50,10 @@ const Second = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <h1 className="text-xl font-bold font-roboto">{note.title}</h1>
+                   <h1 className="text-xl font-borel text-red font-bold">{note.title}</h1>
+
                   </a>
-                  <p className="mt-2 font-inco">{note.content}</p>
+                  <p className="mt-2 font-roboto">{note.content}</p>
                   <p className="mt-2">
                     <a
                       href={note.link}

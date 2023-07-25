@@ -27,21 +27,35 @@ const About = () => {
 
   return (
     <>
-      <div className="flex flex-col mx-4 md:mx-16 mb-16">
-        <div className="py-20" style={{ fontSize: "220px" }}>
+      <div className="flex flex-col pt-24 h-screen px-14">
+      
+        {/* <div className="py-20">
           <h1>
          
-            <div className="pb-2 font-freehand">
+            <div className="pb-2">
               <h1>
               <span className="about">about</span>
-                <span className="span"></span>
+                <span className="mariya font-borel"></span>
                  Mar
                 <span className="italic">i</span>ya.
                 <span className="span"></span>
               </h1>
             </div>
           </h1>
-        </div>
+        </div> */}
+        <div
+              style={{ fontSize: "3vw" }} className="pt-16"
+            >
+            <span className="about font-freehand">about</span> 
+              <h1 className="mariya font-borel">
+                 
+                Mar
+                <button className="italic text-red" >
+                  i
+                </button>
+                ya.
+              </h1>
+            </div>
 
         <div className="image-container flex justify-center items-center">
           <img className="about-image h-72" src={i3} alt=""></img>

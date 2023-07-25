@@ -33,7 +33,7 @@ const SplashScreen = ({ onAnimationComplete }) => {
       }}
     >
       {/* Add your splash screen content here */}
-      <h1 className="text-4xl font-bold">mariya baig</h1>
+      <h1 className="text-4xl font-bold font-borel">mariya baig</h1>
     </div>
   );
 };
@@ -57,9 +57,9 @@ const Home = () => {
         <>
           <div className="h-screen flex flex-col justify-center px-6 sm:px-16">
             <div
-              style={{ fontSize: "clamp(6rem, 22vw, 22rem)" }}
+              style={{ fontSize: "3vw" }}
             >
-              <h1 className="mariya">
+              <h1 className="mariya font-borel">
                 {/* <span className="about">about</span> */}
                 Mar
                 <button className="italic text-red" onClick={handleClick}>

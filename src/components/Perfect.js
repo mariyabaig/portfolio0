@@ -74,8 +74,8 @@ const Perfect = () => {
     <>
       <div className="py-12 px-16">
         <Animated animationIn="zoomIn" animationOut="fadeOut" isVisible={true}>
-        <h2 className="text-2xl font-bold mb-4 text-center">
-            Everything you need for a perfect website
+        <h2 className="text-2xl font-bold mb-4 text-center ">
+            Everything you need for a <span className="font-borel text-red">perfect</span> website.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-justify">
             {data.map((item, index) => (

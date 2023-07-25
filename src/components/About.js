@@ -5,6 +5,7 @@ import i1 from "../assets/i1.jpeg";
 import i2 from "../assets/i2.jpeg";
 import i3 from "../assets/i3.jpeg";
 import transition from "../transition";
+import Skills from "./Skills";
 
 const About = () => {
   const navigate = useNavigate();
@@ -46,11 +47,11 @@ const About = () => {
         <div
               style={{ fontSize: "3vw" }} className="pt-16"
             >
-            <span className="about font-freehand">about</span> 
+           
               <h1 className="mariya font-borel">
-                 
+              <span className="about font-inco text-red font-bold">about</span> 
                 Mar
-                <button className="italic text-red" >
+                <button className="italic" >
                   i
                 </button>
                 ya.
@@ -63,9 +64,9 @@ const About = () => {
           <img className="about-image h-72" src={i2} alt=""></img>
         </div>
 
-        <div className="mx-4 md:mx-0">
-          <p className="text-lg md:text-xl leading-8 md:leading-10 mt-8 md:mt-12">
-            Hi, I'm Mariya Baig. Creating stunning and intuitive web experiences
+        <div className="px-32 md:mx-0 font-inco">
+          <p className="text-lg md:text-xl leading-8 md:leading-10 mt-8 md:mt-12 ">
+            Creating stunning and intuitive web experiences
             is a true passion of mine. From ideation to execution, I thrive on
             the process of bringing designs to life and crafting user-friendly
             interfaces that delight users. With a keen eye for detail and a
@@ -77,7 +78,7 @@ const About = () => {
             level.
           </p>
           <br />
-          <p className="text-lg md:text-xl leading-8 md:leading-10 mt-4 md:mt-8">
+          <p className="text-lg md:text-xl leading-8 md:leading-10 mt-4 md:mt-8 ">
             When it comes to my approach to development, I firmly believe in a
             collaborative and iterative process. I love working closely with
             cross-functional teams to bring ideas to life and am always eager to
@@ -87,12 +88,16 @@ const About = () => {
             cycling, I find that spending time in nature helps me stay centered
             and focused. I'm also an avid reader and love diving into books on a
             wide range of topics, from technology and philosophy to history and
-            science. Above all, my ultimate goal as a web developer is to create
-            impactful, user-centric solutions that not only meet but exceed
-            client expectations. I am excited about the opportunity to continue
-            growing and learning in this ever-evolving field and am always eager
-            to take on new challenges and projects.
+            science. 
           </p>
+          <a href="https://mariyabaig.com" target="_blank" rel="noopener noreferrer" className="block">
+  <div className="card bg-white shadow-lg rounded-lg p-6 max-w-md mx-auto my-4">
+    <h3 className="text-3xl font-semibold text-center mb-4">Technical Blog</h3>
+    <span className="block text-center text-lg">Read more about what I write</span>
+  </div>
+</a>
+
+         
         </div>
       </div>
 

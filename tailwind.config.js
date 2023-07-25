@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       fontFamily: {
         freehand: ["Freehand", "cursive"],
+       borel : ['Borel'," cursive"]
       },
       colors :{
         peach : "#ffb3ac",

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import i1 from "../assets/i1.jpeg";
 import i2 from "../assets/i2.jpeg";
@@ -48,9 +49,10 @@ const About = () => {
             >
               about
             </span>
-            Mar
+            <Link to={"/"}>  Mar
             <button className="italic text-red">i</button>
-            ya.
+            ya.</Link>
+          
           </h1>
         </div>
 

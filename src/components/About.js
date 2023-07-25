@@ -51,11 +51,11 @@ const About = () => {
         <div
               style={{ fontSize: "3vw" }} className="pt-16"
             >
-           
+            
               <h1 className="mariya font-borel">
-              <span className="about font-inco text-red font-bold">about</span> 
+              <span className="about font-inco text-red font-bold" style={{fontSize:"3rem"}}>about</span> 
                 Mar
-                <button className="italic" >
+                <button className="italic text-red" >
                   i
                 </button>
                 ya.

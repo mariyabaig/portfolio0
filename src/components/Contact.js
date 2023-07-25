@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <>
       <footer className="py-4 flex flex-col items-center justify-center text-inco font-bold">
-        <h1 className="text-3xl md:text-4xl text-red">
+        <h1 className="text-3xl md:text-4xl text-red font-borel">
           <a href="https://mariyabaig.com">mariyabaig.com</a>
         </h1>
         <div className="container flex justify-center mt-4">

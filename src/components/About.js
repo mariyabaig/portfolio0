@@ -1,32 +1,34 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import Experience from "./Experience";
 import i1 from "../assets/i1.jpeg";
 import i2 from "../assets/i2.jpeg";
 import i3 from "../assets/i3.jpeg";
-import paw from "../assets//paw.jpg";
+
 import transition from "../transition";
 import Skills from "./Skills";
 import Card from "./Card";
+import Aboutcard from "./Aboutcard";
+
 
 const About = () => {
   const navigate = useNavigate();
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [showExperience, setShowExperience] = useState(false);
+  // const [isExpanded, setIsExpanded] = useState(false);
+  // const [showExperience, setShowExperience] = useState(false);
 
-  const toggleExpanded = () => {
-    setIsExpanded(!isExpanded);
-  };
+  // const toggleExpanded = () => {
+  //   setIsExpanded(!isExpanded);
+  // };
 
-  useEffect(() => {
-    if (isExpanded) {
-      setTimeout(() => {
-        setShowExperience(true);
-      }, 500);
-    } else {
-      setShowExperience(false);
-    }
-  }, [isExpanded]);
+  // useEffect(() => {
+  //   if (isExpanded) {
+  //     setTimeout(() => {
+  //       setShowExperience(true);
+  //     }, 500);
+  //   } else {
+  //     setShowExperience(false);
+  //   }
+  // }, [isExpanded]);
 
   return (
     <>
@@ -92,35 +94,17 @@ const About = () => {
             wide range of topics, from technology and philosophy to history and
             science. 
           </p>
-          <Card/>
-          {/* <a href="https://mariyabaig.com" target="_blank" rel="noopener noreferrer" className="block">
-  <div className="card bg-gray-100 shadow-lg rounded-lg p-6 max-w-md mx-auto my-4">
-    <h3 className="text-3xl font-semibold text-center mb-4  ">Explore My <span className="font-borel text-red">Technical Blog</span></h3>
-    <p className="text-center text-lg mb-4">Dive into a world of technology, coding, and innovation.</p>
-    <span className="block text-center text-lg font-semibold">Read My Articles</span>
-  </div>
-</a> */}
+          <Aboutcard/>
 
-
+        
+        
+         
+       
          
         </div>
       </div>
-
-      {/* <div className="flex flex-col justify-center items-center">
-        {isExpanded ? (
-          <div
-            className={`transition-opacity duration-500 ease-in-out ${
-              showExperience ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <Experience id="experience-section" />
-          </div>
-        ) : (
-          <button className="text-3xl md:text-5xl py-8" onClick={toggleExpanded}>
-            Experience
-          </button>
-        )}
-      </div> */}
+   
+     
     </>
   );
 };

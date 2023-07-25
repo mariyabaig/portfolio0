@@ -23,6 +23,8 @@ module.exports = {
 hand: ['Hi Melody', "cursive"],
 inco: ['Inconsolata', "monospace"],
 oleo: ['Oleo Script', "cursive"],
+spartan :['League Spartan', "sans-serif"],
+roboto :['Roboto Slab', "serif"]
       },
       colors :{
         peach : "#ffb3ac",

@@ -9,6 +9,34 @@ import transition from "../transition";
 import Aboutcard from "./Aboutcard";
 
 const About = () => {
+  const aboutCards = [
+    {
+      imageSrc: 'https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true',
+      title: 'Skills',
+      description: 'Expertise in a wide range of technologies and tools, including HTML, CSS, JavaScript, React.js, Redux, Node.js, Express.js, SQL and NoSQL databases, and Git',
+      linkTo: '/skills',
+    },
+    {
+      imageSrc: 'https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true',
+      title: 'Services',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.',
+      linkTo: '/services',
+    },
+    {
+      imageSrc: 'https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true',
+      title: 'Blog',
+      description: 'Come join me on this exciting journey where we learn & explore web development together. I’ll share insights, experiences, and industry knowledge in a way that’s easy to understand.',
+      linkTo: 'https://mariyabaig.com',
+    },
+    {
+      imageSrc:                  "https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true",
+      title: 'Experience',
+      description: 'Come join me on this exciting journey where we learn & explore web development together. I’ll share insights, experiences, and industry knowledge in a way that’s easy to understand.',
+      linkTo: '/experience',
+    },
+   
+  ];
+
   return (
     <>
       <div className="flex flex-col pt-24 h-screen px-14">
@@ -57,7 +85,7 @@ const About = () => {
             wide range of topics, from technology and philosophy to history and
             science.
           </p>
-          <Aboutcard />
+          <Aboutcard cards={aboutCards} />
         </div>
       </div>
     </>

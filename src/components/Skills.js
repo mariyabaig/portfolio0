@@ -88,7 +88,7 @@ const aboutCards = [
 const Skills = () => {
   return (
     <div className="py-12 bg-white p-6 rounded-lg shadow-md max-w-screen-lg mx-auto">
-      <h2 className="text-2xl font-bold mb-4 text-center">Skills</h2>
+      <h2 className="text-2xl font-bold mb-4 text-center">Languages and Technologies I'm <span className="font-borel text-red">Skilled</span> in</h2>
 
       <div className="grid grid-cols-2 gap-6">
         <div>

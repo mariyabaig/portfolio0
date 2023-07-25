@@ -63,6 +63,7 @@ a */
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Hi+Melody&family=Inconsolata:wght@400;500&family=Oleo+Script:wght@400;700&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -107,11 +108,11 @@ span.about{
 
 
 span.about {
-  color: white;
-  text-shadow: 0 0 3px rgba(125, 119, 108, 0.7), 0 0 3px rgba(125, 119, 108, 0.7), 0 0 3px rgba(125, 119, 108, 0.7);
+ 
+ 
   display: inline-block;
-  font-size: 50px;
-  font-weight: normal;
+  font-size: 40px;
+  
 }
 
 
@@ -121,9 +122,9 @@ span.about {
   }
   
 
-  span.about {
+  /* span.about {
     font-size: 3rem;
-  }
+  } */
   
   div {
     display: flex;
@@ -140,10 +141,10 @@ span.about {
     margin-top: 0;
   }
 }
-.about-container.fade-out {
+/* .about-container.fade-out {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-}
+} */
 
 @media (min-width: 768px) {
   .mariya {
@@ -156,11 +157,11 @@ span.about {
   /* CSS styles go here */
   
   span.about {
-    color: #7D776C;
-    text-shadow: 0 0 3px rgba(125, 119, 108, 0.7), 0 0 3px rgba(125, 119, 108, 0.7), 0 0 3px rgba(125, 119, 108, 0.7);
-    display: inline-block;
-    font-size: 50px;
-    font-weight: normal;
+    /* color: #7D776C;
+    text-shadow: 0 0 3px rgba(125, 119, 108, 0.7), 0 0 3px rgba(125, 119, 108, 0.7), 0 0 3px rgba(125, 119, 108, 0.7); */
+    /* display: inline-block; */
+    /* font-size: 50px; */
+   
   }
 }
 .connect {

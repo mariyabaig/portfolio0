@@ -232,19 +232,7 @@ h1.mariya{
 } */
 
 
-h2 {
-  font-size: 2.25rem;
-  font-family: var(--font-title);
-  color: var(--white);
-  line-height: 1.1;
-}
 
-p {
-  font-family: var(--font-text);
-  font-size: 1rem;
-  line-height: 1.5;
-  color: var(--white);
-}
 
 /* h1.mariya:hover span.span{
   color: #000;
@@ -640,3 +628,4 @@ span.about {
   transform-origin: top;
 
 }
+

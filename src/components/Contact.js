@@ -1,41 +1,47 @@
 import React from "react";
-import { FaEnvelope, FaLinkedin, FaWordpress, FaGithub } from "react-icons/fa";
+import { FiMail, FiLinkedin, FiGithub, FiBook } from "react-icons/fi";
+import transition from "../transition";
+import "../footer.css";
 
 const Contact = () => {
   return (
     <>
-      <footer className="py-4">
-        <h1 className="text-center text-3xl font-bold">mariyabaig.com</h1>
-        <div className="container flex justify-center">
-          <ul className="flex space-x-4 m-2">
-            <li>Home</li>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Skills</li>
-            <li>Experience</li>
-            <li>Services</li>
-          </ul>
-        </div>
-        <div className="container flex justify-center">
-          <ul className="flex space-x-4">
-            <li>
-              <a href="mailto:example@example.com">
-                <FaEnvelope />
+      <footer className="py-4 flex flex-col items-center justify-center text-inco font-bold">
+        <h1 className="text-3xl md:text-4xl text-red">
+          <a href="https://mariyabaig.com">mariyabaig.com</a>
+        </h1>
+        <div className="container flex justify-center mt-4">
+          <ul className="nav flex flex-wrap justify-center">
+            <li className="m-2">
+              <a href="https://mariyabaig.com" target="_blank" rel="noopener noreferrer">
+                <div className="icon-circle">
+                  <FiBook className="icon" />
+                </div>
+                <div className="title">Blog</div>
               </a>
             </li>
-            <li>
-              <a href="https://www.linkedin.com/">
-                <FaLinkedin />
+            <li className="m-2">
+              <a href="https://github.com/mariyabaig" target="_blank" rel="noopener noreferrer">
+                <div className="icon-circle">
+                  <FiGithub className="icon" />
+                </div>
+                <div className="title">GitHub</div>
               </a>
             </li>
-            <li>
-              <a href="https://wordpress.com/">
-                <FaWordpress />
+            <li className="m-2">
+              <a href="https://www.linkedin.com/in/mariya-baig/" target="_blank" rel="noopener noreferrer">
+                <div className="icon-circle">
+                  <FiLinkedin className="icon" />
+                </div>
+                <div className="title">LinkedIn</div>
               </a>
             </li>
-            <li>
-              <a href="https://github.com/">
-                <FaGithub />
+            <li className="m-2">
+              <a href="mailto:mariyabaig0@gmail.com">
+                <div className="icon-circle">
+                  <FiMail className="icon" />
+                </div>
+                <div className="title">Email</div>
               </a>
             </li>
           </ul>
@@ -45,4 +51,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default transition(Contact);

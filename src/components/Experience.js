@@ -18,11 +18,12 @@ const Experience = () => {
 
   return (
     <>
-     <h2 className=" py-12 text-2xl font-bold mb-4 text-center">
+    <div className='my-2 bg-gray-100'>
+     <h2 className=" py-12 text-2xl font-bold  text-center">
           Experience
         </h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div className="bg-white rounded-lg p-8 shadow-md">
+    <div className="grid grid-cols-1 md:grid-cols-1 gap-8 mx-52 items-center justify-center">
+      <div className="rounded-lg p-8 shadow-md">
         <h2 className="text-lg font-bold mt-6 mb-2">PROFESSIONAL EXPERIENCE</h2>
         <div
           className={`mb-6 transition-max-height duration-300 ${
@@ -35,7 +36,7 @@ const Experience = () => {
           >
             <p className="font-bold text-xl">Associate Software Developer</p>
             <p className="">Nagarro, Gurgaon, India</p>
-            <span className="text-blue-600 p-1 m-1 rounded font-bold">Aug 2022 – Present</span>
+            <span className="text-red p-1 m-1 rounded font-bold">Aug 2022 – Present</span>
           </div>
           {dropdownState.showDetails1 && (
             <div className="ml-6 mt-2">
@@ -66,7 +67,7 @@ const Experience = () => {
           >
             <p className="font-bold text-xl">Software Developer Trainee</p>
             <p className="">Nagarro, Gurgaon, India</p>
-            <span className="text-blue-600 p-1 m-1 rounded font-bold">Feb 2022 – Aug 2022</span>
+            <span className="text-red p-1 m-1 rounded font-bold">Feb 2022 – Aug 2022</span>
           </div>
           {dropdownState.showDetails2 && (
             <div className="ml-6 mt-2">
@@ -97,7 +98,7 @@ const Experience = () => {
           >
             <p className="font-bold text-xl">B.Tech (EC)</p>
             <p className="">Acropolis Institute of Technology and Research – Indore, MP</p>
-            <span className="text-blue-600 p-1 m-1 rounded font-bold">2022</span>
+            <span className="text-red p-1 m-1 rounded font-bold">2022</span>
           </div>
           {dropdownState.showDetails3 && (
             <div className="ml-6 mt-2">
@@ -117,7 +118,7 @@ const Experience = () => {
           >
             <p className="font-bold text-xl">12th (CBSE)</p>
             <p className="">San Thome Academy – Dewas, MP</p>
-            <span className="text-blue-600 p-1 m-1 rounded font-bold">2018</span>
+            <span className="text-red p-1 m-1 rounded font-bold">2018</span>
           </div>
           {dropdownState.showDetails4 && (
             <div className="ml-6 mt-2">
@@ -137,7 +138,7 @@ const Experience = () => {
           >
             <p className="font-bold text-xl">10th (CBSE)</p>
             <p className="">San Thome Academy – Dewas, MP</p>
-            <span className="text-blue-600 p-1 m-1 rounded font-bold">2018</span>
+            <span className="text-red p-1 m-1 rounded font-bold">2018</span>
           </div>
           {dropdownState.showDetails5 && (
             <div className="ml-6 mt-2">
@@ -148,6 +149,7 @@ const Experience = () => {
 
         {/* Add other educational experiences in a similar format */}
       </div>
+    </div>
     </div>
     </>
   );

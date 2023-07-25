@@ -47,11 +47,11 @@ const Experience = () => {
     <>
     <div className='my-2 flex flex-col justify-center items-center bg-gray-100'>
      <h2 className=" py-12 text-2xl font-bold  text-center">
-          Experience
+         <span className='font-borel text-red'>Journey</span> So Far
         </h2>
     <div className="grid grid-cols-1 md:grid-cols-1 gap-8 mx-52 items-center justify-center">
       <div className="rounded-lg p-8 shadow-md">
-        <h2 className="text-lg font-bold mt-6 mb-2">PROFESSIONAL EXPERIENCE</h2>
+        <h2 className="text-lg font-bold mt-6 mb-2">Professional Experience</h2>
         <div
           className={`mb-6 transition-max-height duration-300 ${
             dropdownState.showDetails1 ? 'max-h-64' : 'max-h-16'
@@ -113,7 +113,7 @@ const Experience = () => {
       </div>
 
       <div className="bg-white rounded-lg p-8 shadow-md">
-        <h2 className="text-lg font-bold mt-6 mb-2">EDUCATIONAL EXPERIENCE</h2>
+        <h2 className="text-lg font-bold mt-6 mb-2">Educational Experience</h2>
         <div
           className={`mb-6 transition-max-height duration-300 ${
             dropdownState.showDetails3 ? 'max-h-64' : 'max-h-16'

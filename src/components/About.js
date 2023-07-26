@@ -20,7 +20,7 @@ const About = () => {
     {
       imageSrc: 'https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true',
       title: 'Services',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.',
+      description: 'I provide professional web development services with a focus on creating functional and visually appealing websites. ',
       linkTo: '/services',
     },
     {
@@ -32,7 +32,7 @@ const About = () => {
     {
       imageSrc:                  "https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true",
       title: 'Experience',
-      description: 'Come join me on this exciting journey where we learn & explore web development together. I’ll share insights, experiences, and industry knowledge in a way that’s easy to understand.',
+      description: 'Learn about my web development experiences and education.',
       linkTo: '/experience',
     },
    
@@ -44,12 +44,12 @@ const About = () => {
         <div style={{ fontSize: "3vw" }} className="pt-16">
           <h1 className="mariya font-borel">
             <span
-              className="about font-inco text-red font-bold"
+              className="about font-inco text-red"
               style={{ fontSize: "3rem" }}
             >
               about
             </span>
-            <Link to={"/"}>  Mar
+            <Link to={"/"}>Mar
             <button className="italic text-red">i</button>
             ya.</Link>
           

@@ -2,8 +2,7 @@
 
 body {
   background: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
+
   text-shadow: 0.5px 0.5px 0 #CCCCCC;
 }
 
@@ -33,7 +32,7 @@ li a {
   width: 100px;
   text-align: center;
   font-size: 15px;
-  color: #edf5e1;
+  
   text-decoration: none;
 }
 

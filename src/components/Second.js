@@ -1,6 +1,7 @@
 import React from "react";
 import Draggable from "react-draggable";
 import transition from "../transition";
+import "../blog.css";
 const Second = () => {
   const notes = [
     {
@@ -13,15 +14,13 @@ const Second = () => {
       title: "Single Responsibility Principle in React",
       content:
         "Among the various approaches available, Single Responsibility Principle in React is one of the most encouraged principles. It helps in establishing a well-organized codebase and enhances productivity, collaboration, and long-term code maintenance. Learn how to apply this principle effectively to improve your React projects.",
-      link:
-        "https://mariyabaig.com/single-responsibility-principle-in-react/",
+      link: "https://mariyabaig.com/single-responsibility-principle-in-react/",
     },
     {
       title: "ES2023: New JavaScript Features",
       content:
         "ES2023, the 14th and current version of JavaScript, brings a host of new features and enhancements. Whether you’re a seasoned developer or just starting out, this version aims to elevate your JavaScript development experience to new heights. Explore the latest features and make your coding adventures more efficient, powerful, and enjoyable.",
-      link:
-        "https://mariyabaig.com/new-features-and-enhancements-in-javascript-es2023/",
+      link: "https://mariyabaig.com/new-features-and-enhancements-in-javascript-es2023/",
     },
     {
       title: "Virtual DOM and Its Working",
@@ -32,41 +31,40 @@ const Second = () => {
   ];
 
   return (
-    <div className="bg-gray-200 min-h-screen py-12 flex flex-col">
-       <h2 className="text-2xl font-bold mb-4 text-center">
-          Things I've <span className="font-borel text-red">written</span> about
-        </h2>
+    <div className=" min-h-screen py-12 flex flex-col">
+      <h2 className="text-2xl font-bold mb-4 text-center">
+        Things I've <span className="font-borel text-red">written</span> about
+      </h2>
       <div className="container mx-auto px-4">
-   
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {notes.map((note, index) => (
-            <Draggable key={index}>
-              <div className="notepad bg-white rounded-lg p-4 shadow-md">
-                <div className="top"></div>
-                <div className="paper" contentEditable="true"></div>
-                <div className="mt-4">
-                  <a
-                    href={note.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                   <h1 className="text-xl font-borel text-red font-bold">{note.title}</h1>
-
-                  </a>
-                  <p className="mt-2 font-roboto">{note.content}</p>
-                  <p className="mt-2">
-                    <a
+            <a
                       href={note.link}
                       target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-red-600 font-bold hover:underline cursor-pointer"
+                      rel="noopener noreferrer">
+            <Draggable key={index}>
+       
+              <div className="notepad">
+                <div className="top"></div>
+                <div className="paper" contenteditable="true">
+                 
+                    <h1 className="text-md font-borel text-red font-bold">
+                      {note.title}
+                    </h1>
+                 
+                  <p className="mt-2 font-roboto">{note.content}</p>
+                  <p className="mt-2">
+                    <span
+                      className="text-red font-bold hover:underline cursor-pointer"
                     >
                       Continue reading
-                    </a>
+                    </span>
                   </p>
+          
                 </div>
               </div>
             </Draggable>
+            </a>
           ))}
         </div>
       </div>

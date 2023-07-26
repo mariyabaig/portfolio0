@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Contact from "./Contact";
-import Experience from "./Experience";
+// import Experience from "./Experience";
 import Perfect from "./Perfect";
-import Projects from "./Projects";
+// import Projects from "./Projects";
 import { Animated } from "react-animated-css";
 import { FiLinkedin, FiGithub } from "react-icons/fi";
-import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
 import { CiLinkedin } from "react-icons/ci";
 import Second from "./Second";
 import transition from "../transition";
@@ -128,7 +127,7 @@ const Home = () => {
             </div>
           </div>
           <Second />
-          <Projects />
+          {/* <Projects /> */}
           <Perfect />
           <Contact />
         </>

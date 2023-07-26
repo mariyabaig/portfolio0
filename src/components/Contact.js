@@ -17,7 +17,7 @@ const Contact = () => {
         </li>
 
         <li>
-          <a href="https://mariyabaig.com" target="_blank">
+          <a href="https://mariyabaig.com" target="_blank" rel="noreferrer">
             <div className="icon-circle">
               <FiCodepen className="icon" />
             </div>
@@ -26,7 +26,7 @@ const Contact = () => {
         </li>
 
         <li>
-          <a href="https://github.com/mariyabaig" target="_blank">
+          <a href="https://github.com/mariyabaig" target="_blank" rel="noreferrer">
             <div className="icon-circle">
               <FiGithub className="icon" />
             </div>
@@ -35,7 +35,7 @@ const Contact = () => {
         </li>
 
         <li>
-          <a href="https://www.linkedin.com/in/mariya-baig/" target="_blank">
+          <a href="https://www.linkedin.com/in/mariya-baig/" target="_blank" rel="noreferrer">
             <div className="icon-circle">
               <FiLinkedin className="icon" />
             </div>
@@ -54,7 +54,7 @@ const Contact = () => {
         <div className='background'/>
        
       </ul>
-      <a href='mariyabaig.com' className='text-red font-borel text-3xl mt-9 text-bold '>mariyabaig.com</a>
+      <a href='https://mariyabaig.com' className='text-red font-borel text-3xl mt-9 text-bold '>mariyabaig.com</a>
       </div>
     </>
   );

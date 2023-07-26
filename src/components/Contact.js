@@ -5,6 +5,7 @@ import '../footer.css';
 const Contact = () => {
   return (
     <>
+    <div className='flex flex-col justify-center items-center'>
       <ul className="nav">
         <li>
           <a href="/" target="_blank">
@@ -51,8 +52,10 @@ const Contact = () => {
           </a>
         </li>
         <div className='background'/>
+       
       </ul>
-    
+      <a href='mariyabaig.com' className='text-red font-borel text-3xl mt-9 text-bold '>mariyabaig.com</a>
+      </div>
     </>
   );
 };

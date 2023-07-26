@@ -53,7 +53,7 @@ const Perfect = () => {
     {
       imageSrc: 'https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true',
       title: 'About',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.',
+      description: 'I love devloping the web, coding, doodling and cats. Learn more about me.',
       linkTo: '/about',
     },
     {
@@ -65,7 +65,7 @@ const Perfect = () => {
     {
       imageSrc:                  "https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true",
       title: 'Experience',
-      description: 'Come join me on this exciting journey where we learn & explore web development together. I’ll share insights, experiences, and industry knowledge in a way that’s easy to understand.',
+      description: 'Learn about my web development experiences and education.',
       linkTo: '/experience',
     },
    

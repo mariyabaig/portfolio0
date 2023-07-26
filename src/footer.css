@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-
+body {
+  background: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px 0 #CCCCCC;
+}
 
 .background {
   position: fixed;
@@ -13,7 +18,7 @@
 }
 
 .nav {
-  padding: 0;
+  padding: 0px;
   width: 640px;
   margin: 100px auto auto auto;
 }
@@ -28,7 +33,7 @@ li a {
   width: 100px;
   text-align: center;
   font-size: 15px;
-  
+  color: #edf5e1;
   text-decoration: none;
 }
 
@@ -66,36 +71,42 @@ li a.title:hover {
 }
 
 .nav li:first-child a {
-  background: #F1E1E5 !important;
+  background: #EDE7DC !important;
 }
 
 .nav li:nth-child(2) a {
-  background: #fad2db !important;
+  background: #DCD2CC !important;
 }
 
 .nav li:nth-child(3) a {
-  background: #eccad3 !important;
+  background: #EED6D3 !important;
 }
 
 .nav li:nth-child(4) a {
-  background: #eca7a9 !important;
+  background: #CCAFA5 !important;
 }
-
+.nav li:nth-child(5) a {
+  background: #99a09c !important;
+}
 .nav li:first-child:hover ~ .background {
-  background: #F1E1E5;
+  background: #EDE7DC;
 }
 
 .nav li:nth-child(2):hover ~ .background {
-  background: #fad2db;
+  background: #DCD2CC;
 }
 
 .nav li:nth-child(3):hover ~ .background {
-  background: #eccad3;
+  background: #EED6D3;
 }
 
 .nav li:nth-child(4):hover ~ .background {
-  background: #eca7a9;
+  background: #CCAFA5;
 }
+.nav li:nth-child(5):hover ~ .background {
+  background: #a7adaa;
+}
+
 
 @keyframes illuminate {
   0% {

@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
 body {
   background: #FFFFFF;
-
   text-shadow: 0.5px 0.5px 0 #CCCCCC;
 }
 
@@ -18,8 +15,8 @@ body {
 
 .nav {
   padding: 0px;
-  width: 640px;
-  margin: 100px auto auto auto;
+  width: 320px; /* Reduce the width */
+  margin: 80px auto auto auto; /* Adjust the margin */
 }
 
 ul {
@@ -27,32 +24,31 @@ ul {
 }
 
 li a {
-  padding: 30px;
+  padding: 15px; /* Reduce the padding */
   float: left;
-  width: 100px;
+  width: 60px; /* Reduce the width */
   text-align: center;
-  font-size: 15px;
-  
+  font-size: 10px; /* Reduce the font size */
   text-decoration: none;
 }
 
 li a:hover .circle {
   position: relative;
   z-index: 1;
-  top: -60px;
-  width: 80px;
-  height: 80px;
+  top: -30px; /* Reduce the top position */
+  width: 40px; /* Reduce the width */
+  height: 40px; /* Reduce the height */
   border-radius: 100%;
   animation: illuminate 2s ease-out infinite;
   background: #fdc6be;
 }
 
 li i {
-  height: 50px;
+  height: 30px; /* Reduce the icon size */
 }
 
 li a:hover i {
-  transform: translateY(-10px);
+  transform: translateY(-5px); /* Reduce the transform distance */
 }
 
 li a .title {
@@ -60,13 +56,13 @@ li a .title {
 }
 
 li a:hover .title {
-  transform: translateY(10px);
-  font-size: 15px;
+  transform: translateY(5px); /* Reduce the transform distance */
+  font-size: 10px; /* Reduce the font size */
   transition: 0.5s;
 }
 
 li a.title:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px); /* Reduce the transform distance */
 }
 
 .nav li:first-child a {
@@ -84,9 +80,11 @@ li a.title:hover {
 .nav li:nth-child(4) a {
   background: #CCAFA5 !important;
 }
+
 .nav li:nth-child(5) a {
   background: #99a09c !important;
 }
+
 .nav li:first-child:hover ~ .background {
   background: #EDE7DC;
 }
@@ -102,10 +100,10 @@ li a.title:hover {
 .nav li:nth-child(4):hover ~ .background {
   background: #CCAFA5;
 }
+
 .nav li:nth-child(5):hover ~ .background {
   background: #a7adaa;
 }
-
 
 @keyframes illuminate {
   0% {

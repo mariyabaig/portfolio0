@@ -1,4 +1,3 @@
-/* Card Component Styling */
 
 .card {
     position: relative;
@@ -72,7 +71,7 @@
     background-color: #e60000;
   }
   
-  /* Media Query for Mobile */
+ 
   @media (max-width: 768px) {
     .card {
       width: 100%;

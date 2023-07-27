@@ -24,6 +24,7 @@
     "react-slick": "^0.29.0",
     "react-typewriter-effect": "^1.1.0",
     "styled-components": "^5.3.9",
+    "surge": "^0.23.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

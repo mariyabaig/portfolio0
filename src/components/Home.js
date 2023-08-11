@@ -5,7 +5,7 @@ import Contact from "./Contact";
 import Perfect from "./Perfect";
 // import Projects from "./Projects";
 import { Animated } from "react-animated-css";
-import { FiLinkedin, FiGithub } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
 import { CiLinkedin } from "react-icons/ci";
 import Second from "./Second";
 import transition from "../transition";

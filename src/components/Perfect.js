@@ -1,5 +1,4 @@
 import React from "react";
-import { FiSearch } from "react-icons/fi";
 import { Animated } from "react-animated-css";
 import transition from "../transition";
 import Aboutcard from "./Aboutcard";

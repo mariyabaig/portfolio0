@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -12,7 +12,6 @@ import Navbar from "./components/Navbar";
 import Perfect from "./components/Perfect";
 import Skills from "./components/Skills";
 import { AnimatePresence } from "framer-motion";
-import Transition from "./transition";
 import Second from "./components/Second";
 
 function App() {

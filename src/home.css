@@ -1,0 +1,28 @@
+html{
+    font-size: 16px;
+}
+
+
+
+h1.mariya{
+    cursor: pointer;
+    font-size: 10rem;
+    
+  }
+
+
+  @media (max-width: 480px) {
+    h1.mariya {
+      cursor: pointer;
+      font-size: 3rem;
+    }
+
+    
+  }
+  
+  @media (max-width: 767px) {
+    h1.mariya {
+      cursor: pointer;
+      font-size: 5rem;
+    }
+  }
